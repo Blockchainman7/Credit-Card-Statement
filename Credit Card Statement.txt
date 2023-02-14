@@ -1,0 +1,68 @@
+public class crdeitdebit {
+ 
+    public static void main(String[] args);
+ 
+        ListStack<Integer> listStack = new ListStack<>();ring[]> data = new ArrayListString[]>;
+ 
+    String filename = " C:\\Users\\User\\Desktop\\JAVA.txt ";
+ 
+    String dataRow;
+    double balance=0;
+    
+ 
+    try{
+        BufferedReader br = new BufferedReader(new FileReader(filename));
+ 
+        while ((dataRow = br.readline()) != null) {
+ 
+            String[] line = dataRow.split(",");
+            data.add(line);
+        }
+        br.close();
+ 
+    }catch (FileNotFoundException e) {
+        e.printStackTrace();
+ 
+    }catch (IOException e){
+        e.printStackTrace();
+    }
+    For (String[] transaction: transactions ){
+        for (String field : transaction){
+            System.out.printIn(field + "  ");
+ 
+        }
+        System.out.printIn();
+    }
+}
+for (string[] transactions: transactions){
+String data = transaction[0];
+String type = transaction[1];
+String vendor= transaction[2];
+double amount= double.parsedouble(transaction[3]);
+System.out.printIn(date+ "  " + type+"  "+ vendor+ " $ "  + amount);
+ 
+If type.equalIgnoreCase("Credit "){
+System.out.printIn("  Add to balance");
+balance= balance+amount;
+}
+else{
+syste,.out.printIn("Some Other Transaction  ");
+}
+System.out.printIn("New Balance:  " + balance);
+}else{
+}
+system.out.printIn("  " + balance + " \n ");
+}
+If (balance>0 ){
+ystem.out.printIn(" you have a balance of " + balance);
+system.out.printIn("you are charged a fee of 10%  " + balance * 0.10);
+system.out.orintIn("your new balance is:  " balance* 1.1);
+}}}
+Else If (balance<0){
+system.out.printIn ("Thanks for your payments:  ");
+system.out.printIn(" You have a overpayment of: " + balance):
+}
+Else{
+system.out.printIn("Thanks for your payment  ");
+}
+}}
